@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            width: 100%;
+            height: 150px;
+            background-color: rgb(40, 131, 210);
+        }
+        .sidebar-left, .sidebar-right {
+            width: 25%;
+            height: 700px;
+            background-color: yellow;
+        }
+        .main-content {
+            width: 50%;
+            height: 700px;
+            background-color: white;
+        }
+        .footer {
+            width: 100%;
+            height: 125px;
+            background-color: rgb(40, 131, 210);
+        }
+        .content {
+            display: flex;
+            flex: 1; /* Займає всю доступну висоту */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Шапка сайту
+        </div>
+        <div class="content">
+            <div class="sidebar-left"></div>
+            <div class="main-content"></div>
+            <div class="sidebar-right"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
